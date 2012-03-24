@@ -32,4 +32,7 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
+Dir[File.dirname(__FILE__) + '/lib/trufflepig/*.rb'].each {|file| require file }
+Dir[File.dirname(__FILE__) + '/lib/tasks/*.rb'].each {|file| require file }
+
 task :default => :test
