@@ -8,8 +8,6 @@ module Trufflepig
     end
 
     def perform
-      raise "File not found" unless File.exist?(path)
-
       if File.directory?(path)
         Dir.chdir path
         files = {

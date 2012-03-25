@@ -1,4 +1,6 @@
 {
   "audio": "<audio.*>.*<\/audio>",
+  "css-boxshadow": "box-shadow\:",
+  "stream": "getUserMedia",
   "video": "<video.*>.*<\/video>"
 }

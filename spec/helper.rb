@@ -14,3 +14,7 @@ require 'purdytest'
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'trufflepig'
+
+def dummy_app_path
+  "#{File.dirname(__FILE__)}/dummy_app"
+end
