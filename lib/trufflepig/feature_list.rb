@@ -1,7 +1,11 @@
 require "json"
 
-module Truffelpig
+module Trufflepig
   class FeatureList
+    def self.load
+      JSON.parse File.read("#{File.dirname(__FILE__)}/../../data/features.json")
+    end
+
     def self.build
       # read data from caniuse JSON
       caniuse = JSON.parse File.read("#{File.dirname(__FILE__)}/../../data/caniuse.json")
