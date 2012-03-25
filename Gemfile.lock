@@ -22,3 +22,4 @@ DEPENDENCIES
   bundler
   jeweler (~> 1.8.3)
   purdytest
+  rake
