@@ -1,11 +1,10 @@
 module Trufflepig
   class Search
-    attr_accessor :results, :path, :features
+    attr_accessor :results, :path
 
     def initialize(path)
       @results = []
       @path = path
-      @features = FeatureList.load
     end
 
     def perform
@@ -28,6 +27,7 @@ module Trufflepig
 
     def scan(file_path)
       content = File.read file_path
+      features = FeatureList.load
 
       features.each do |key, feature|
         next unless feature["detection_pattern"]
