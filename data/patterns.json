@@ -1,3 +1,4 @@
 {
+  "audio": "<audio.*>.*<\/audio>",
   "video": "<video.*>.*<\/video>"
 }
