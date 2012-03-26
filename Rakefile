@@ -14,7 +14,7 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   gem.name = "trufflepig"
-  gem.homepage = "http://github.com/skddc/trufflepig"
+  gem.homepage = "http://github.com/5apps/trufflepig"
   gem.license = "MIT"
   gem.summary = %Q{Detects Web platform feature usage in source files}
   gem.description = %Q{Detects Web platform feature usage in source files}
