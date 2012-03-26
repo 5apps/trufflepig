@@ -1,6 +1,6 @@
 [![Build Status](https://secure.travis-ci.org/5apps/trufflepig.png?branch=master)](http://travis-ci.org/5apps/trufflepig)
 
-Scans files and directories for scrummy truffles.
+Scans files and directories for scrummy truffles. And by truffles, we mean shiny new features of HTML5, JavaScript APIs, CSS3, and friends. Obviously.
 
 ## License
 
