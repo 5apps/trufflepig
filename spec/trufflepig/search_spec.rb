@@ -43,6 +43,8 @@ describe Trufflepig::Search do
         @search.results.must_include "video"         # html
         @search.results.must_include "stream"        # js
         @search.results.must_include "css-boxshadow" # css
+        @search.results.must_include "offline-apps"
+        @search.results.must_include "canvas"
       end
     end
   end
