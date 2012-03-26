@@ -1,6 +1,18 @@
 {
   "audio": "<audio.*>.*<\/audio>",
+  "border-image": "border-image(-(source|slice|width|outset|repeat))?\:",
+  "border-radius": "border(-(top|bottom)-(right|left))?-radius\:",
+  "canvas": "<canvas.*>.*<\/canvas>",
+  "css-animation": "animation(-(name|duration|timing-function|iteration-count|direction|delay))?\:",
   "css-boxshadow": "box-shadow\:",
+  "css-gradients": "(linear|radial)-gradient(.*)",
+  "css-textshadow": "text-shadow\:",
+  "css-transitions": "transition(-(property|duration|timing-function|delay))?\:",
+  "css3-boxsizing": "box-sizing\:",
+  "deviceorientation": "deviceorientation|devicemotion|compassneedscalibration",
+  "offline-apps": "<html.*\smanifest=.*>",
   "stream": "getUserMedia",
-  "video": "<video.*>.*<\/video>"
+  "video": "<video.*>.*<\/video>",
+  "websockets": "new WebSocket(.*)",
+  "webworkers": "new (Shared)?Worker(.*)"
 }
