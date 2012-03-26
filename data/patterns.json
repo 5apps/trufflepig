@@ -10,9 +10,15 @@
   "css-transitions": "transition(-(property|duration|timing-function|delay))?\\:",
   "css3-boxsizing": "box-sizing\\:",
   "deviceorientation": "deviceorientation|devicemotion|compassneedscalibration",
+  "fileapi": "new FileReader",
+  "fullscreen": "[rR]equestFull[sS]creen|[cC]ancelFullScreen|exitFullscreen|fullscreeneventchange",
+  "geolocation": "navigator\\.geolocation",
+  "indexeddb": "IndexedDB|IDB(Cursor|Database|Environment|Factory|Index|KeyRange|ObjectStore|OpenDBRequest|Request|Transaction|VersionChangeEvent)",
   "offline-apps": "<html.*\\smanifest=.*>",
+  "requestanimationframe": "(cancel|request)AnimationFrame",
   "stream": "getUserMedia",
+  "touch": "touch(start|end|move|cancel)|createTouch(List)?",
   "video": "<video.*>.*<\\/video>",
-  "websockets": "new WebSocket(.*)",
-  "webworkers": "new (Shared)?Worker(.*)"
+  "websockets": "new WebSocket\\s*(.*)",
+  "webworkers": "new (Shared)?Worker\\s*(.*)"
 }
