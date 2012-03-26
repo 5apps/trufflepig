@@ -25,12 +25,17 @@ module Trufflepig
 
     def scan(file_path)
       content = File.read file_path
-      features = FeatureList.load
 
       features.each do |key, feature|
         next unless feature["detection_pattern"]
         results << key if content.match(/#{feature["detection_pattern"]}/)
       end
+    end
+
+    private
+
+    def features
+      @features ||= FeatureList.load
     end
   end
 end
