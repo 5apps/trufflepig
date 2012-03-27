@@ -29,7 +29,7 @@ describe Trufflepig::Search do
       end
 
       it "finds a truffle" do
-        @search.results.collect{|f| f["slug"] }.must_include "video"
+        @search.results.collect{|f| f["id"] }.must_include "video"
       end
     end
 
@@ -40,7 +40,7 @@ describe Trufflepig::Search do
       end
 
       it "finds a lot of truffles" do
-        feature_keys = @search.results.collect{|f| f["slug"] }
+        feature_keys = @search.results.collect{|f| f["id"] }
 
         feature_keys.must_include "video"         # html
         feature_keys.must_include "stream"        # js

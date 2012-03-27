@@ -26,9 +26,9 @@ module Trufflepig
     def scan(file_path)
       content = File.read file_path
 
-      features.each do |key, feature|
+      features.each do |feature|
         next unless feature["detection_pattern"]
-        results << feature.merge({"slug" => key}) if content.match(/#{feature["detection_pattern"]}/)
+        results << feature if content.match(/#{feature["detection_pattern"]}/)
       end
     end
 
