@@ -65,6 +65,7 @@
   "script-defer": "<script\\s.*defer.*>",
   "sharedworkers": "new\\s+SharedWorker\\s*\\(.*\\)",
   "stream": "getUserMedia",
+  "svg": "<svg.*>.*<\\/svg>",
   "text-overflow": "text-overflow\\:",
   "touch": "touch(start|end|move|cancel)|createTouch(List)?",
   "ttf": "\\.ttf",
