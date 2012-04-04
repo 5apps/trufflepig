@@ -48,6 +48,12 @@ describe Trufflepig::Search do
         feature_keys.must_include "offline-apps"
         feature_keys.must_include "canvas"
       end
+
+      it "doesn't search in well-known JS libs" do
+        feature_keys = @search.results.collect{|f| f["id"] }
+
+        feature_keys.wont_include "getelementsbyclassname"
+      end
     end
   end
 end

@@ -2,6 +2,8 @@ module Trufflepig
   class Search
     attr_accessor :results, :path
 
+    EXCLUDED_FILENAMES = /jquery|prototype|yui|dojo|extjs|raphael|zepto|enyo|ember/
+
     def initialize(path)
       @results = []
       @path = path
@@ -24,6 +26,8 @@ module Trufflepig
     end
 
     def scan(file_path)
+      return if file_path.split('/').last.match EXCLUDED_FILENAMES
+
       content = File.read file_path
 
       features.each do |feature|
