@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "0.2.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Sebastian Kippe"]
+  s.authors = ["Sebastian Kippe", "Garret Alfert"]
   s.date = "2012-04-04"
   s.description = "Detects Web platform feature usage in source files"
-  s.email = "sebastian@kip.pe"
+  s.email = "rubygems@5apps.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"

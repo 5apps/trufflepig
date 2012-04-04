@@ -18,8 +18,8 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = %Q{Detects Web platform feature usage in source files}
   gem.description = %Q{Detects Web platform feature usage in source files}
-  gem.email = "sebastian@kip.pe"
-  gem.authors = ["Sebastian Kippe"]
+  gem.email = "rubygems@5apps.com"
+  gem.authors = ["Sebastian Kippe", "Garret Alfert"]
 end
 Jeweler::RubygemsDotOrgTasks.new
 
