@@ -23,13 +23,26 @@ describe Trufflepig::Search do
     end
 
     describe "with file path" do
-      before do
-        @search = Trufflepig::Search.new "#{dummy_app_path}/index.html"
-        @search.perform
+      describe "any file" do
+        before do
+          @search = Trufflepig::Search.new "#{dummy_app_path}/index.html"
+          @search.perform
+        end
+
+        it "finds a truffle" do
+          @search.results.collect{|f| f["id"] }.must_include "video"
+        end
       end
 
-      it "finds a truffle" do
-        @search.results.collect{|f| f["id"] }.must_include "video"
+      describe "a well-known JS lib file" do
+        before do
+          @search = Trufflepig::Search.new "#{dummy_app_path}/js/jquery.js"
+          @search.perform
+        end
+
+        it "finds a truffle" do
+          @search.results.collect{|f| f["id"] }.must_include "getelementsbyclassname"
+        end
       end
     end
 

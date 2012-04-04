@@ -18,7 +18,9 @@ module Trufflepig
           :css => Dir.glob(File.join("**", "*.css"))
         }
         files.each do |type, paths|
-          paths.each {|file| scan file }
+          paths.each  do |path|
+            scan path unless path.split('/').last.match EXCLUDED_FILENAMES
+          end
         end
       else
         scan path
@@ -26,8 +28,6 @@ module Trufflepig
     end
 
     def scan(file_path)
-      return if file_path.split('/').last.match EXCLUDED_FILENAMES
-
       content = File.read file_path
 
       features.each do |feature|
