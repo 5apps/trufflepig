@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{trufflepig}
-  s.version = "0.2.2"
+  s.name = "trufflepig"
+  s.version = "0.2.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Sebastian Kippe}]
-  s.date = %q{2012-03-30}
-  s.description = %q{Detects Web platform feature usage in source files}
-  s.email = %q{sebastian@kip.pe}
+  s.authors = ["Sebastian Kippe"]
+  s.date = "2012-04-04"
+  s.description = "Detects Web platform feature usage in source files"
+  s.email = "sebastian@kip.pe"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
     "spec/dummy_app/css/style.css",
     "spec/dummy_app/index.html",
     "spec/dummy_app/js/app.js",
+    "spec/dummy_app/js/jquery.js",
     "spec/dummy_app/js/jquery.min.js",
     "spec/helper.rb",
     "spec/trufflepig/feature_list_spec.rb",
@@ -42,11 +43,11 @@ Gem::Specification.new do |s|
     "spec/trufflepig_spec.rb",
     "trufflepig.gemspec"
   ]
-  s.homepage = %q{http://github.com/5apps/trufflepig}
-  s.licenses = [%q{MIT}]
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.6}
-  s.summary = %q{Detects Web platform feature usage in source files}
+  s.homepage = "http://github.com/5apps/trufflepig"
+  s.licenses = ["MIT"]
+  s.require_paths = ["lib"]
+  s.rubygems_version = "1.8.19"
+  s.summary = "Detects Web platform feature usage in source files"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
