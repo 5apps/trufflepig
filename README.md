@@ -5,8 +5,8 @@ shiny new features of HTML5, JavaScript APIs, CSS3, and friends. Obviously.
 
 ## Usage
 
-```
-ruby gem 'trufflepig', :require => 'trufflepig'
+```ruby
+gem 'trufflepig', :require => 'trufflepig'
 ```
 
 Send the trufflepig on its way:
