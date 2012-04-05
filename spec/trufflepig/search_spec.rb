@@ -34,7 +34,7 @@ describe Trufflepig::Search do
         end
       end
 
-      describe "a well-known JS lib file" do
+      describe "a well-known JS or CSS lib file" do
         before do
           @search = Trufflepig::Search.new "#{dummy_app_path}/js/jquery.js"
           @search.perform

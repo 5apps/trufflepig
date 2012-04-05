@@ -2,7 +2,10 @@ module Trufflepig
   class Search
     attr_accessor :results, :path
 
-    EXCLUDED_FILENAMES = /jquery|prototype|yui|dojo|extjs|raphael|zepto|enyo|ember/
+    EXCLUDED_FILENAMES = /#{%w{
+      jquery prototype yui dojo extjs raphael zepto enyo ember modernizr
+      bootstrap foundation
+    }.join('|')}/
 
     def initialize(path)
       @results = []
