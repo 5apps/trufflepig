@@ -3,7 +3,7 @@
 Scans files and directories for scrummy truffles. And by truffles, we mean
 shiny new features of HTML5, JavaScript APIs, CSS3, and friends. Obviously.
 
-[!Truffle pigs](http://5apps-assets.s3.amazonaws.com/trufflepig/trufflepig.png)
+![Truffle pigs](http://5apps-assets.s3.amazonaws.com/trufflepig/trufflepig.png)
 
 ## Usage
 
