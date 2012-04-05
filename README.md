@@ -3,13 +3,15 @@
 Scans files and directories for scrummy truffles. And by truffles, we mean
 shiny new features of HTML5, JavaScript APIs, CSS3, and friends. Obviously.
 
+[!Truffle pigs](http://5apps-assets.s3.amazonaws.com/trufflepig/trufflepig.png)
+
 ## Usage
 
 ```ruby
 gem 'trufflepig', :require => 'trufflepig'
 ```
 
-Send the trufflepig on its way:
+Send the truffle pig on its way:
 
 ```ruby
 search = Trufflepig::Search.new "path/to/file/or/directory"
