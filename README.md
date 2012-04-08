@@ -46,6 +46,15 @@ rake featurelist:build
 * Command line interface
 * ...
 
+## Contributing
+
+We love pull requests. If you want to submit a patch:
+
+* Fork the project.
+* Make your feature addition or bug fix.
+* Write specs for it. This is important so nobody breaks it in a future version unintentionally.
+* Push to your fork and send a pull request.
+
 ## License
 
 This gem is licensed under the MIT license. The feature data is originally from
