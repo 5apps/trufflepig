@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "trufflepig"
-  s.version = "0.2.7"
+  s.version = "0.2.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sebastian Kippe", "Garret Alfert"]
@@ -34,6 +34,7 @@ Gem::Specification.new do |s|
     "lib/trufflepig/search.rb",
     "spec/dummy_app/css/style.css",
     "spec/dummy_app/index.html",
+    "spec/dummy_app/js/MIDI.js/midi.js",
     "spec/dummy_app/js/app.js",
     "spec/dummy_app/js/jquery.js",
     "spec/dummy_app/js/jquery.min.js",
