@@ -22,6 +22,7 @@ module Trufflepig
         }
         files.each do |type, paths|
           paths.each  do |path|
+            next if File.directory?(path)
             scan path unless path.split('/').last.match EXCLUDED_FILENAMES
           end
         end
