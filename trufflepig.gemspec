@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "trufflepig"
-  s.version = "0.2.6"
+  s.version = "0.2.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sebastian Kippe", "Garret Alfert"]
-  s.date = "2012-04-05"
+  s.date = "2012-08-28"
   s.description = "Detects Web platform feature usage in source files"
   s.email = "rubygems@5apps.com"
   s.extra_rdoc_files = [
@@ -46,7 +46,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/5apps/trufflepig"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.19"
+  s.rubygems_version = "1.8.23"
   s.summary = "Detects Web platform feature usage in source files"
 
   if s.respond_to? :specification_version then
