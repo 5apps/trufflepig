@@ -44,6 +44,17 @@ describe Trufflepig::Search do
           @search.results.collect{|f| f["id"] }.must_include "getelementsbyclassname"
         end
       end
+
+      describe "symlinked file" do
+        before do
+          @search = Trufflepig::Search.new "#{dummy_app_path}/linked.html"
+          @search.perform
+        end
+
+        it "finds a truffle" do
+          @search.results.collect{|f| f["id"] }.must_include "video"
+        end
+      end
     end
 
     describe "with directory path" do

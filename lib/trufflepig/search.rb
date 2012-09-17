@@ -13,6 +13,8 @@ module Trufflepig
     end
 
     def perform
+      raise Errno::ENOENT unless File.exists? path
+
       if File.directory?(path)
         Dir.chdir path
         files = {
@@ -32,6 +34,7 @@ module Trufflepig
     end
 
     def scan(file_path)
+      return unless File.exists? file_path
       content = File.read file_path
 
       features.each do |feature|
