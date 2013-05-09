@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "trufflepig"
-  s.version = "0.2.10"
+  s.version = "0.2.11"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sebastian Kippe", "Garret Alfert"]
-  s.date = "2012-12-18"
+  s.date = "2013-05-09"
   s.description = "Detects Web platform feature usage in source files"
   s.email = "rubygems@5apps.com"
   s.extra_rdoc_files = [
@@ -38,6 +38,7 @@ Gem::Specification.new do |s|
     "spec/dummy_app/js/app.js",
     "spec/dummy_app/js/jquery.js",
     "spec/dummy_app/js/jquery.min.js",
+    "spec/dummy_app/latin1_encoded.html",
     "spec/dummy_app/linked.html",
     "spec/helper.rb",
     "spec/trufflepig/feature_list_spec.rb",
@@ -48,7 +49,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/5apps/trufflepig"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "1.8.25"
   s.summary = "Detects Web platform feature usage in source files"
 
   if s.respond_to? :specification_version then
