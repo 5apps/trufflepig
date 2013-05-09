@@ -55,6 +55,17 @@ describe Trufflepig::Search do
           @search.results.collect{|f| f["id"] }.must_include "video"
         end
       end
+
+      describe "non utf-8 encoded file" do
+        before do
+          @search = Trufflepig::Search.new "#{dummy_app_path}/latin1_encoded.html"
+          @search.perform
+        end
+
+        it "finds a truffle" do
+          @search.results.collect{|f| f["id"] }.must_include "video"
+        end
+      end
     end
 
     describe "with directory path" do

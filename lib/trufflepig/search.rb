@@ -35,7 +35,7 @@ module Trufflepig
 
     def scan(file_path)
       return unless File.exists? file_path
-      content = File.read file_path
+      content = File.open(file_path, "rb").read
 
       features.each do |feature|
         next unless feature["detection_pattern"]
