@@ -31,12 +31,25 @@ feature as well as browser compatibility tables, and links to more info.
 ## Adding or updating detection patterns
 
 Add or update patterns with the correct caniuse.com key to
-[data/patterns.json](https://github.com/5apps/trufflepig/blob/master/data/patterns.json).
+[data/patterns.json](https://github.com/5apps/trufflepig/blob/master/data/patterns.json)
+by running:
+
+```
+rake featurelist:fetch
+```
+
 The build task will merge that list with the source JSON and create
 data/features.json which will be used by the search:
 
 ```
 rake featurelist:build
+```
+
+For convenience there is also a task that combines the two previous
+ones:
+
+```
+rake featurelist:update
 ```
 
 ## To do
